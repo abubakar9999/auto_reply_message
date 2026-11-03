@@ -1,0 +1,53 @@
+name: auto_reply
+description: "Busy Auto-Reply - Smart SMS auto-responder during prayer, sleep, meetings, and busy times."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^3.4.3
+
+  # Local Database (Drift SQLite)
+  drift: ^2.35.3
+  drift_flutter: ^0.3.1
+  sqlite3_flutter_libs: ^0.6.0+eol
+  path_provider: ^2.1.6
+  path: ^1.9.1
+
+  # Background Service & Notifications
+  flutter_background_service: ^5.1.0
+  flutter_local_notifications: ^22.3.3
+
+  # Call state & Telephony
+  phone_state: ^4.0.1
+  flutter_contacts: ^2.6.0
+
+  # Permissions & Storage
+  permission_handler: 11.3.1
+  shared_preferences: ^2.5.6
+
+  # Utilities & Networking
+  intl: ^0.20.3
+  csv: ^8.0.0
+  uuid: ^4.6.0
+  http: ^1.6.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.35.2
+  build_runner: ^2.17.1
+
+flutter:
+  uses-material-design: true
